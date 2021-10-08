@@ -15,5 +15,168 @@ $qrlink: #E40046;
 }
 body{
   color: $dark-blue;
-  color: $dark-blue;
 }
+
+// nav
+
+ul{
+  list-style: none;
+}
+.nav{
+  // display: grid;
+  // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  // text-align: right;
+  right: 40px;
+  top: 100px;
+  // z-index: 200;
+  position: absolute;
+  position: fixed;
+}
+
+.nav li{
+  padding: 12px 0px;
+}
+
+.page:first-child{
+  text-align: right;
+}
+
+.page{
+  font-size: 15pt;
+  cursor: pointer;
+  // height: 100px;
+  padding-bottom: 8px;
+  width: 110px;
+  text-decoration: none;
+  color: $dark-blue;
+  border: none;
+  background-color: transparent;
+}
+
+.is-active button {
+  color: $blue;
+  font-weight: bold;
+}
+
+.bu{
+  position: fixed;
+  border-radius: 40px;
+  background: $dark-blue;
+  color: white;
+  text-align: center;
+  z-index: 200;
+  bottom: 20px;
+}
+
+.nav li a button:hover{
+  color: $qrlink;
+}
+
+
+button:focus{
+  outline:0;
+}
+
+.nameNav{
+  text-decoration: none;
+}
+
+.iconName{
+  text-decoration: none;
+  padding-top: 12px;
+  text-align: center;
+  font-size: 18pt;
+}
+
+.nav-icon {
+  width: 20px;
+  position: fixed;
+  color: $dark-blue;
+  z-index: 300;
+  right: 8%;
+  top: 25px;
+}
+
+.nav-icon:after, 
+.nav-icon:before, 
+.nav-icon div {
+  background-color: $dark-blue;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+  transition: all .2s ease-in-out;
+}
+
+.navMobile{
+  text-decoration: none;
+  font-size: 14px;
+  display: grid;
+  grid-template-rows: 60px 60px 60px 60px 60px;
+  grid-row-gap: 15px;
+  text-align: center;
+  width: 80%;
+  position: fixed;
+  z-index: 200;
+  background-color: white;
+  height: 100vh;
+  padding: 10%;
+  margin-top: 74px;
+}
+
+.notShowMenuMobile {
+  display: none;
+}
+
+.cross:before {
+  transform: translateY(6px) rotate(135deg);
+}
+
+.cross:after {
+  transform: translateY(-6px) rotate(-135deg);
+}
+
+.cross div {
+  transform: scale(0);
+}
+
+@media screen and (max-width: 1300px) {
+
+  .menuMobile{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 74px;
+ 
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainContainer{
+  width: 100%;
+  height: 3000px;
+}
+.intro{
+  width: 90%;
+  height: 40%;
+  background-color: $aqua;
+}
+
