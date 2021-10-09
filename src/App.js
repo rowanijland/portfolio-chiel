@@ -170,7 +170,6 @@ class App extends Component {
               }}>
               {/* <FontAwesomeIcon icon={faArrowUp} /> */}
             </div>
-            <div className="navWithLine">
               <ul className="nav">
                 <li>
                   <NavLink exact={true} to="/" activeClassName="is-active">
@@ -213,7 +212,6 @@ class App extends Component {
                   </NavLink>
                 </li>
               </ul>
-            </div>
           </div>
         )}
         <Suspense

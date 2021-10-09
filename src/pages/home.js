@@ -21,7 +21,13 @@ class Home extends Component {
       return (
        <div className="mainContainer">
          <div className="intro">
-
+           <div className="name">
+            <h1>CHIEL</h1>
+            <h2>Timmermans</h2>
+           </div>
+          <div className="imageHome">
+            <iframe className="imageFrontpage" src="main.html" scrolling="no"></iframe>
+          </div>
          </div>
        </div>
       );
