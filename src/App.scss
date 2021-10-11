@@ -2,7 +2,7 @@ $dark-blue: #22314E;
 $blue: #3C648E;
 $green: #AFC5C4;
 $aqua: #ECF0F0;
-$light-blue: #ECF0F0;
+$light-blue: #F4F6F8;
 $qrlink: #E40046;
 
 *{
@@ -20,6 +20,10 @@ body{
 p{
   line-height: 30px;
 }
+h3{
+  font-weight: lighter;
+}
+
 // nav
 
 ul{
@@ -197,7 +201,7 @@ button:focus{
 .name h1{
   font-size: 100pt;
   line-height: 100px;
-  font-family: Georgia, serif;
+  font-family: 'Times New Roman', serif;
   font-weight: lighter;
 }
 
@@ -290,7 +294,6 @@ button:focus{
 
 .aceworksLeft{
   padding: 15%;
-  
 }
 .aceworksLogo{
   display: block;
@@ -334,7 +337,7 @@ button:focus{
   grid-row-gap: 40px;
   grid-row: 100px 100px;
   width: 75%;
-  margin: 10% 5%;
+  margin: 8% 5%;
 }
 
 .row1, .row2{
@@ -363,3 +366,158 @@ button:focus{
   margin-right: auto;
   width: 60%;
 }
+
+// Track
+
+.track{
+  background-color: $light-blue;
+  margin: 40px auto;
+  border-radius: 5px;
+  width: 95%;
+  height: 450px;
+}
+
+.trackContent{
+  padding: 6%;
+  margin: auto;
+  text-align: center;
+
+}
+.trackLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  margin-bottom: 30px;
+}
+.trackText{
+  margin: auto;
+  text-align: center;
+  width: 60%;
+}
+
+// Teqram
+
+.teqram{
+  border-radius: 5px;
+  width: 85%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.robot{
+  width: 100%;
+}
+
+.teqramRight{
+  padding: 15%;
+  margin: auto;
+  width: 70%;
+}
+
+.teqramRight img,h3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+.teqramLogo{
+  padding: 20px 0px;
+  margin: auto;
+  width: 70%;
+}
+
+.teqramText{
+  text-align: justify;
+}
+
+// School
+
+.school{
+  background-color: $aqua;
+  margin: 0px auto 120px auto;
+  border-radius: 5px;
+  width: 95%;
+  height: 900px;
+}
+
+.schoolTitle{
+  padding: 60px;
+  font-weight: lighter;
+  text-align: center;
+}
+.textSchool{
+  margin: 10% 10% 5% 25%;
+  text-align: right;
+}
+
+.textSchool h1{
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.chess{
+  width: 400px;
+}
+
+.part1School{
+  display: grid;
+  grid-template-columns: 45% 55%;
+  padding-bottom: 50px;
+}
+
+
+
+
+// Contact
+
+.contact{
+  background-color: $light-blue;
+  border-radius: 5px;
+  height: 320px;
+}
+
+.contactContent{
+  padding-top: 90px;
+}
+
+.buttons{
+  margin: 50px auto;
+  width: 17%;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.buttonContact{
+  font-size: 1.2rem;
+  color: white;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  background-color: $blue;  
+  box-shadow: 0px 20px 25px 1px#3c648e75;
+  text-decoration: none;
+}
+
+.linkedin svg{
+  height: 50px;
+  //box-shadow: 0px 20px 25px 1px#3c648e75;
+}
+
+.chiel{
+  width: 40%;
+  position: absolute;
+}
+.contact p{
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  font-size: 15pt;
+}
+

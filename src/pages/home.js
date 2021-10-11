@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Link } from 'react-router-dom';
+import { ReactComponent as Linkedin } from '../linkedin.svg';
 import qrlink from '../qrlink.svg';
 import aceworks from '../aceworks.svg';
 import aceworksImg from '../aceworksImg.png';
 
 import go from '../go.png';
 import docker from '../docker.png';
-
 import emc from '../emc.svg';
 import c from '../c.png';
 import combo from '../combo.png';
 import sql from '../sql.png';
 import leader from '../leadership.svg';
 import commu from '../commu.svg';
+import track from '../track.png';
+import machien from '../machien.svg';
+import teqram from '../teqram.png';
+import chiel from '../chiel.svg';
+import chess from '../chess.gif';
 
 class Home extends Component {
     // constructor(props) {
@@ -109,21 +114,119 @@ class Home extends Component {
              <img className="skillsImg" alt="logo" src={emc}></img>
             </div>
             <div className="card skills4">
+            <p>C++</p>
              <img className="skillsImg" alt="logo" src={c}></img>
             </div>
           </div>
           <div className="row2">
             <div className="card skills1">
+            <p>ReactJS / VueJS</p>
               <img className="skillsImg" alt="logo" src={combo}></img>
             </div>
             <div className="card skills2">
+            <p>MySQL</p>
              <img className="skillsImg" alt="logo" src={sql}></img>
             </div>
             <div className="card skills3">
+            <p>Leadership skills</p>
               <img className="skillsImg" alt="logo" src={leader}></img>
             </div>
             <div className="card skills4">
+            <p>Comunnication skills</p>
               <img className="skillsImg" alt="logo" src={commu}></img>
+            </div>
+          </div>
+        </div>
+
+        <div className="track">
+          <div className="trackContent">
+            <h3>Internship & work experience</h3>
+            <img className="trackLogo" alt="logo" src={track}></img>
+            <div className="trackText">
+              <p>
+                At Teqram I did my first internship. The stack at Teqram is made up of a custom application
+                in C++ that could run Lua code to control multiple vision guided robots. My daily activities
+                include the development of the Lua code.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="teqram">
+         <img className="robot" alt="logo" src={machien}></img>
+          <div className="teqramRight">
+            <h3>Internship & work experience</h3>
+            <img className="teqramLogo" alt="logo" src={teqram}></img>
+            <div className="teqramText">
+              <p>
+                At AceWorks I am the lead backend engineer. The stack at AceWorks started with VueJS on
+                top of Laravel, later on we changed Laravel to Go. At AceWorks we have developed simple
+                webpages, webshops and dashboards. Besides my daily activities I also was involved in
+                managing the company and talking with customers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div className="school">
+          <h1 className="schoolTitle">School time</h1>
+          
+          <div className="part1School">
+            <div className="textSchool">
+              <h1>Chess board </h1>
+              <p>
+                At AceWorks I am the lead backend engineer. The stack at AceWorks started with VueJS on
+                top of Laravel, later on we changed Laravel to Go. At AceWorks we have developed simple
+                webpages, webshops and dashboards.
+              </p>
+            </div>
+            <img className="chess" alt="logo" src={chess}></img>
+          </div>
+
+          <div className="part1School">
+            <div className="textSchool">
+              <h1>Aeron </h1>
+              <p>
+                At AceWorks I am the lead backend engineer. The stack at AceWorks started with VueJS on
+                top of Laravel, later on we changed Laravel to Go. At AceWorks we have developed simple
+                webpages, webshops and dashboards.
+              </p>
+            </div>
+            {/* <img className="chess" alt="logo" src={chess}></img> */}
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div className="contact">
+          <img className="chiel" alt="logo" src={chiel}></img>
+          <div className="contactContent">
+            <p>chieltimmermans@hotmail.com<br/>8012 TX, Zwolle</p>
+            
+            <div className="buttons">
+              <Link className="buttonContact2" to="/Illustrations">
+                <button className="buttonContact" type="submit" value="SEND">
+                  Contact me
+                </button>
+              </Link>
+              <a className="linkedin" href="https://www.linkedin.com/in/chieltimmermans/">
+                  <Linkedin />
+              </a>
             </div>
           </div>
         </div>
