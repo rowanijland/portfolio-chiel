@@ -17,6 +17,9 @@ body{
   color: $dark-blue;
 }
 
+p{
+  line-height: 30px;
+}
 // nav
 
 ul{
@@ -177,15 +180,36 @@ button:focus{
   background-color: $aqua;
 }
 
+.name{
+  padding-bottom: 40px;
+  font-size: 100pt;
+}
+
+.introText{
+  width: 30%;
+}
+
+.introText p{
+  font-size: 15pt;
+  line-height: 30px;
+}
+
 .name h1{
-  font-size: 120pt;
-  line-height: 150px;
-  
+  font-size: 100pt;
+  line-height: 100px;
+  font-family: Georgia, serif;
+  font-weight: lighter;
 }
 
 .name h2{
-  font-size: 55pt;
+  font-size: 43pt;
   line-height: 80px;
+  font-family: Georgia, serif;
+  font-weight: lighter;
+}
+
+.leftIntro{
+  padding: 100px;
 }
 
 .imageHome{
@@ -198,4 +222,144 @@ button:focus{
   width: 900px;
   height: 600px;
   border: none;
+}
+
+.buttonHome{
+  margin-top: 60px;
+  display: block;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  background-color: $blue;  
+  box-shadow: 0px 20px 25px 1px #3c648e6b;
+  text-decoration: none;
+}
+
+
+// QR-Link
+
+.qrlink{
+  margin: 10% 0%;
+}
+.qrlinkLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin-bottom: 30px;
+}
+.qrlinkText{
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+.buttonQrlink{
+  margin: 50px auto;
+  width: 50%;
+  display: block;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  background-color: $qrlink;  
+  box-shadow: 0px 20px 25px 1px #e400443d;
+  text-decoration: none;
+}
+
+
+
+// Aceworks
+
+.aceworks{
+  background-color: $green;
+  margin: 40px auto;
+  border-radius: 5px;
+  width: 95%;
+  height: 550px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.aceworksLeft{
+  padding: 15%;
+  
+}
+.aceworksLogo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  margin-bottom: 40px;
+}
+.aceworksText{
+  text-align: justify;
+}
+.aceworksText p{
+  color: white;
+}
+
+.buttonAceworks{
+  margin: 50px auto;
+  width: 50%;
+  display: block;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  width: 180px;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  background-color: $dark-blue;  
+  box-shadow: 0px 20px 25px 1px#3c648e6b;
+  text-decoration: none;
+}
+
+.aceworksImg{
+  padding-top: 12%;
+  width: 80%;
+}
+
+// Skills
+
+.skills{
+  display: grid;
+  grid-row-gap: 40px;
+  grid-row: 100px 100px;
+  width: 75%;
+  margin: 10% 5%;
+}
+
+.row1, .row2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.card{
+  width: 260px;
+  height: 280px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 1px#63768a2f;
+}
+
+.card p{
+  font-size: 15pt;
+  display: block;
+  margin: 20px auto 50px auto;
+  width: fit-content;
+}
+
+.skillsImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
