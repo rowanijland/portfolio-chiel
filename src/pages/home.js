@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import { BrowserRouter as Link } from 'react-router-dom';
 import { ReactComponent as Linkedin } from '../linkedin.svg';
 import qrlink from '../qrlink.svg';
@@ -20,23 +20,16 @@ import chiel from '../chiel.svg';
 import chess from '../chess.gif';
 
 class Home extends Component {
-    // constructor(props) {
-    //   super(props);
   
-    //   this.state = {
-    //     isMobile: 8000,
-    //   };
-  
-    //   this.isMobile = this.isMobile.bind(this);
-    // }
-  
-    // isMobile() {
-    //   let screenSize = window.innerWidth;
-    //   console.log(screenSize);
-    //   this.setState({ isMobile: screenSize });
-    // }
+    constructor(props) {
+      super(props);
+      this.myRef = React.createRef()
+    }
+
+    scrollToMyRef = () => window.scrollTo({left:0, top:this.myRef.current.offsetTop, behavior: 'smooth'})
   
     render() {
+      
       return (
        <div className="mainContainer">
          <div className="intro">
@@ -50,7 +43,7 @@ class Home extends Component {
             </div>
             <div className="buttonIntro">
               <Link className="buttonHomepage" to="/Illustrations">
-                <button className="buttonHome" type="submit" value="SEND">
+                <button onClick={this.scrollToMyRef} className="buttonHome" type="submit" value="SEND">
                   Contact me
                 </button>
               </Link>
@@ -173,7 +166,7 @@ class Home extends Component {
 
 
 
-        <div className="school">
+        <div  ref={this.myRef} className="school">
           <h1 className="schoolTitle">School time</h1>
           
           <div className="part1School">
