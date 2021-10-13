@@ -16,6 +16,16 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    this.myRef1 = React.createRef()
+    this.myRef2 = React.createRef()
+    this.myRef3 = React.createRef()
+    this.myRef4 = React.createRef()
+    this.myRef5 = React.createRef()
+    this.myRef6 = React.createRef()
+    this.myRef7 = React.createRef()
+    this.myRef8 = React.createRef()
+
+
     this.state = {
       active: false,
       intervalId: 0,
@@ -26,6 +36,18 @@ class App extends Component {
     this.hideToolTip = this.hideToolTip.bind(this);
     this.onResize = this.onResize.bind(this);
   }
+
+  scrollToMyRef1 = () => window.scrollTo({left:0, top:0, behavior: 'smooth'})
+  scrollToMyRef2 = () => window.scrollTo({left:0, top:600, behavior: 'smooth'})
+  scrollToMyRef3 = () => window.scrollTo({left:0, top:1200, behavior: 'smooth'})
+  scrollToMyRef4 = () => window.scrollTo({left:0, top:1900, behavior: 'smooth'})
+  scrollToMyRef5 = () => window.scrollTo({left:0, top:2550, behavior: 'smooth'})
+  scrollToMyRef6 = () => window.scrollTo({left:0, top:3100, behavior: 'smooth'})
+  scrollToMyRef7 = () => window.scrollTo({left:0, top:3700, behavior: 'smooth'})
+  scrollToMyRef8 = () => window.scrollTo({left:0, top:4500, behavior: 'smooth'})
+
+
+
 
   componentDidMount() {
     window.addEventListener('scroll', this.hideToolTip);
@@ -73,13 +95,14 @@ class App extends Component {
     return (
       <Router>
         {/* <ScrollToTop /> */}
-        <div className="menuMobile">
-          <Link to="/">
-            {/* <img className="logoRocreate" alt="logo" src={logo}></img> */}
-          </Link>
-        </div>
+        
         {this.state.layoutMode === 'mobile' ? (
           <div>
+            <div className="menuMobile">
+        
+            <p className="ctLogo" onClick={this.scrollToMyRef1}>CT</p>
+     
+        </div>
             <div
               className={this.state.active ? 'nav-icon cross' : 'nav-icon'}
               onClick={() => this.setState({ active: !this.state.active })}>
@@ -100,14 +123,14 @@ class App extends Component {
                 <Link onClick={() => this.setState({ active: !this.state.active })} 
                   className="AboutNav nameNav" 
                   to="/">
-                  <p className="iconName">Home</p>
+                  <button onClick={this.scrollToMyRef1} className="iconName">Home</button>
                 </Link>
               </li>
               <li>
                 <Link onClick={() => this.setState({ active: !this.state.active })} 
                   className="nameNav" 
                   to="/Qr">
-                  <p className="iconName">Qr Link</p>
+                  <button onClick={this.scrollToMyRef2} className="iconName">Qr Link</button>
                 </Link>
               </li>
               <li>
@@ -115,7 +138,7 @@ class App extends Component {
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="illustrationsNav nameNav"
                   to="/Aceworks">
-                  <p className="iconName">Aceworks</p>
+                  <button onClick={this.scrollToMyRef3} className="iconName" >Aceworks</button>
                 </Link>
               </li>
               <li>
@@ -123,7 +146,7 @@ class App extends Component {
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="LogosNav nameNav"
                   to="/Skills">
-                  <p className="iconName">Skills</p>
+                  <button onClick={this.scrollToMyRef4} className="iconName">Skills</button>
                 </Link>
               </li>
               <li>
@@ -131,7 +154,7 @@ class App extends Component {
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="LogosNav nameNav"
                   to="/Tt">
-                  <p className="iconName">Track Technologies</p>
+                  <button onClick={this.scrollToMyRef5} className="iconName">Track Technologies</button>
                 </Link>
               </li>
               <li>
@@ -139,7 +162,7 @@ class App extends Component {
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="LogosNav nameNav"
                   to="/Teqram">
-                  <p className="iconName">Teqram</p>
+                  <button onClick={this.scrollToMyRef6} className="iconName">Teqram</button>
                 </Link>
               </li>
               <li>
@@ -147,7 +170,7 @@ class App extends Component {
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="LogosNav nameNav"
                   to="/School">
-                  <p className="iconName">School</p>
+                  <button onClick={this.scrollToMyRef7} className="iconName">School</button>
                 </Link>
               </li>
               <li>
@@ -155,7 +178,7 @@ class App extends Component {
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="pageFourNav nameNav"
                   to="/Contact">
-                  <p className="iconName">Contact</p>
+                  <button onClick={this.scrollToMyRef8} className="iconName">Contact</button>
                 </Link>
               </li>
             </ul>
@@ -170,46 +193,46 @@ class App extends Component {
               }}>
               {/* <FontAwesomeIcon icon={faArrowUp} /> */}
             </div>
-              <ul className="nav">
+            <ul className="nav">
                 <li>
-                  <NavLink exact={true} to="/" activeClassName="is-active">
-                    <button className="page">Home</button>
-                  </NavLink>
+                  <Link to="/" >
+                    <button onClick={this.scrollToMyRef1} className="page">Home</button>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/Qrlink" activeClassName="is-active">
-                    <button className="page">Qr Link</button>
-                  </NavLink>
+                  <Link to="/" >
+                    <button onClick={this.scrollToMyRef2} className="page">Qr Link</button>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/Aceworks" activeClassName="is-active">
-                    <button className="page" >Aceworks</button>
-                  </NavLink>
+                  <Link to="/" >
+                    <button onClick={this.scrollToMyRef3} className="page" >Aceworks</button>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/Skills" activeClassName="is-active">
-                    <button className="page">Skills</button>
-                  </NavLink>
+                  <Link to="/">
+                    <button onClick={this.scrollToMyRef4} className="page">Skills</button>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/Tt" activeClassName="is-active">
-                    <button className="page">Track Technologies</button>
-                  </NavLink>
+                  <Link to="/">
+                    <button onClick={this.scrollToMyRef5} className="page">Track Technologies</button>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/Teqram" activeClassName="is-active">
-                    <button className="page">Teqram</button>
-                  </NavLink>
+                  <Link to="/">
+                    <button onClick={this.scrollToMyRef6} className="page">Teqram</button>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/School" activeClassName="is-active">
-                    <button className="page">School</button>
-                  </NavLink>
+                  <Link to="/" >
+                    <button onClick={this.scrollToMyRef7} className="page">School</button>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink to="/Contact" activeClassName="is-active">
-                    <button className="page">Contact</button>
-                  </NavLink>
+                  <Link to="/">
+                    <button onClick={this.scrollToMyRef8} className="page">Contact</button>
+                  </Link>
                 </li>
               </ul>
           </div>
@@ -223,7 +246,7 @@ class App extends Component {
             </div>
           }>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route path="/" component={Home} />
             <Route path="/qrlink" component={Qr} />
             <Route path="/aceworks" component={Aceworks} />
             <Route path="/skills" component={Skills} />

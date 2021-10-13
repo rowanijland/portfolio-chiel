@@ -20,19 +20,10 @@ import chiel from '../chiel.svg';
 import chess from '../chess.gif';
 
 class Home extends Component {
-  
-    constructor(props) {
-      super(props);
-      this.myRef = React.createRef()
-    }
-
-    scrollToMyRef = () => window.scrollTo({left:0, top:this.myRef.current.offsetTop, behavior: 'smooth'})
-  
     render() {
-      
       return (
        <div className="mainContainer">
-         <div className="intro">
+         <div ref={this.myRef1} className="intro">
            <div className="leftIntro">
             <div className="name">
               <h1>CHIEL</h1>
@@ -43,7 +34,7 @@ class Home extends Component {
             </div>
             <div className="buttonIntro">
               <Link className="buttonHomepage" to="/Illustrations">
-                <button onClick={this.scrollToMyRef} className="buttonHome" type="submit" value="SEND">
+                <button className="buttonHome" type="submit" value="SEND">
                   Contact me
                 </button>
               </Link>
@@ -54,7 +45,7 @@ class Home extends Component {
           </div>
          </div>
 
-         <div className="qrlink">
+        <div ref={this.myRef2} className="qrlink">
           <img className="qrlinkLogo" alt="logo" src={qrlink}></img>
           <div className="qrlinkText">
             <p>
@@ -65,14 +56,17 @@ class Home extends Component {
               talking with customers.
             </p>
           </div>
-            <Link className="buttonQrlink" to="/Illustrations">
-              <button className="buttonQrlink" type="submit" value="SEND">
-                Visit QR-Link
-              </button>
-            </Link>
-         </div>
+          <button
+            className="buttonQrlink"
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href='https://qrlink.nl/';
+              }}>Visit QR-Link
+          </button>
+        </div>
 
-        <div className="aceworks">
+        <div ref={this.myRef3} className="aceworks">
           <div className="aceworksLeft">
             <img className="aceworksLogo" alt="logo" src={aceworks}></img>
             <div className="aceworksText">
@@ -83,16 +77,19 @@ class Home extends Component {
                 managing the company and talking with customers.
               </p>
             </div>
-              <Link className="buttonAceworks" to="/Illustrations">
-                <button className="buttonAceworks" type="submit" value="SEND">
-                  Visit Aceworks
-                </button>
-              </Link>
+            <button
+              className="buttonAceworks"
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href='https://www.aceworks.nl/';
+                }}>Go to Aceworks
+            </button>
            </div>
            <img className="aceworksImg" alt="logo" src={aceworksImg}></img>
         </div>
 
-        <div className="skills">
+        <div ref={this.myRef4} className="skills">
           <div className="row1">
             <div className="card skills1">
               <p>Go Lang</p>
@@ -131,7 +128,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="track">
+        <div ref={this.myRef5} className="track">
           <div className="trackContent">
             <h3>Internship & work experience</h3>
             <img className="trackLogo" alt="logo" src={track}></img>
@@ -145,7 +142,7 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="teqram">
+        <div ref={this.myRef6} className="teqram">
          <img className="robot" alt="logo" src={machien}></img>
           <div className="teqramRight">
             <h3>Internship & work experience</h3>
@@ -160,13 +157,8 @@ class Home extends Component {
             </div>
           </div>
         </div>
-
-
-
-
-
-
-        <div  ref={this.myRef} className="school">
+        
+        <div  ref={this.myRef7} className="school">
           <h1 className="schoolTitle">School time</h1>
           
           <div className="part1School">
@@ -192,21 +184,9 @@ class Home extends Component {
             </div>
             {/* <img className="chess" alt="logo" src={chess}></img> */}
           </div>
-
-
-
-
         </div>
 
-
-
-
-
-
-
-
-
-        <div className="contact">
+        <div ref={this.myRef8} className="contact">
           <img className="chiel" alt="logo" src={chiel}></img>
           <div className="contactContent">
             <p>chieltimmermans@hotmail.com<br/>8012 TX, Zwolle</p>

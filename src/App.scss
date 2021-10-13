@@ -71,7 +71,7 @@ ul{
 }
 
 .nav li a button:hover{
-  color: $qrlink;
+  color: $blue;
 }
 
 
@@ -123,8 +123,7 @@ button:focus{
   z-index: 200;
   background-color: white;
   height: 100vh;
-  padding: 10%;
-  margin-top: 74px;
+  padding: 0 10%;
 }
 
 .notShowMenuMobile {
@@ -152,14 +151,33 @@ button:focus{
     height: 74px;
  
   }
-
-
+  .nav{
+    display: none;
+  }
+  .menuMobile{
+    top:0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 74px;
+    z-index: 20;
+  }
 
 }
 
 
+.is-active button {
+  border-bottom: 1px solid $qrlink;
+  width: initial;
+}
 
-
+.ctLogo{
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 20px;
+  padding-left: 8%;
+  font-size: 18pt;
+}
 
 
 
@@ -174,7 +192,7 @@ button:focus{
 
 .mainContainer{
   width: 100%;
-  height: 3000px;
+  height: fit-content;
 }
 .intro{
   margin: 40px auto;
@@ -208,7 +226,7 @@ button:focus{
 .name h2{
   font-size: 43pt;
   line-height: 80px;
-  font-family: Georgia, serif;
+  font-family: 'Times New Roman', serif;
   font-weight: lighter;
 }
 
@@ -243,6 +261,9 @@ button:focus{
   text-decoration: none;
 }
 
+.buttonHome:hover{
+  background-color: $dark-blue;
+}
 
 // QR-Link
 
@@ -268,7 +289,6 @@ button:focus{
   display: block;
   cursor: pointer;
   font-size: 1.2rem;
-  color: white;
   width: 180px;
   height: 50px;
   border: none;
@@ -276,8 +296,12 @@ button:focus{
   background-color: $qrlink;  
   box-shadow: 0px 20px 25px 1px #e400443d;
   text-decoration: none;
+  color: white;
 }
 
+.buttonQrlink:hover{
+  background-color: #b10035;  
+}
 
 
 // Aceworks
@@ -323,6 +347,10 @@ button:focus{
   background-color: $dark-blue;  
   box-shadow: 0px 20px 25px 1px#3c648e6b;
   text-decoration: none;
+}
+
+.buttonAceworks:hover{
+  background-color: #17233a;  
 }
 
 .aceworksImg{
@@ -477,7 +505,6 @@ button:focus{
 
 .contact{
   background-color: $light-blue;
-  border-radius: 5px;
   height: 320px;
 }
 
@@ -503,6 +530,10 @@ button:focus{
   background-color: $blue;  
   box-shadow: 0px 20px 25px 1px#3c648e75;
   text-decoration: none;
+}
+
+.buttonContact:hover{
+  background-color: $dark-blue;  
 }
 
 .linkedin svg{
