@@ -115,7 +115,7 @@ button:focus{
   text-decoration: none;
   font-size: 14px;
   display: grid;
-  grid-template-rows: 60px 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
   grid-row-gap: 15px;
   text-align: center;
   width: 80%;
@@ -125,6 +125,28 @@ button:focus{
   height: 100vh;
   padding: 0 10%;
 }
+
+.iconName{
+  color: $dark-blue;
+  background-color: white;
+  border: none;
+}
+
+@keyframes navMobile {
+  100% { transform: translateX(0%); }
+}
+
+.navMobile li{
+  text-align: center;
+}
+
+.navMobile{
+  transform: translateX(120%);
+  animation: navMobile 0.6s ease-in-out forwards;
+  -webkit-animation: navMobile 0.6s ease-in-out forwards;
+}
+
+
 
 .notShowMenuMobile {
   display: none;
@@ -141,30 +163,6 @@ button:focus{
 .cross div {
   transform: scale(0);
 }
-
-@media screen and (max-width: 1300px) {
-
-  .menuMobile{
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    height: 74px;
- 
-  }
-  .nav{
-    display: none;
-  }
-  .menuMobile{
-    top:0;
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    height: 74px;
-    z-index: 20;
-  }
-
-}
-
 
 .is-active button {
   border-bottom: 1px solid $qrlink;
@@ -552,3 +550,131 @@ button:focus{
   font-size: 15pt;
 }
 
+
+
+@media screen and (max-width: 1300px) {
+  .nav{
+    display: none;
+  }
+  .menuMobile{
+    top:0;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 74px;
+    z-index: 20;
+  }
+
+  .intro{
+    width: 100%;
+  }
+
+  .imageHome{
+    margin: auto;
+    width: 50%;
+    transform: scaleY(0.5) scaleX(0.5);
+  }
+
+  .leftIntro {
+    padding: 15%;
+    margin-top: 80px;
+    // width: 100%;
+    // display: block;
+} 
+  
+  .introText{
+    width: 100%;
+  }
+  
+  .introText p{
+    font-size: 15pt;
+    line-height: 30px;
+    text-align: justify;
+  }
+  
+  .name h1{
+    font-size: 50pt;
+    line-height: 30px;
+    font-family: 'Times New Roman', serif;
+    font-weight: lighter;
+    text-align: center;
+  }
+  
+  .name h2{
+    font-size: 21pt;
+    font-family: 'Times New Roman', serif;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .buttonHome {
+    margin:  auto;
+    width: 90%;
+    margin-top: 160px;
+  }
+
+  .qrlink {
+    margin: 20% 15%;
+  }
+
+  .qrlinkLogo {
+    width: 70%;
+  }
+
+  .qrlinkText {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .buttonQrlink {
+    margin: auto;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+
+  .aceworks {
+    background-color: $green;
+    margin: 40px auto;
+    border-radius: 5px;
+    width: 100%;
+    height: 550px;
+    display: inline;
+
+  }
+
+  .aceworksLeft {
+    padding: 15% 15% 5% 15%;
+    background-color:$green;
+  }
+
+  .aceworksImg {
+    padding-top: 0%;
+    padding-bottom: 10%;
+    width: 100%;
+    background-color: $green;
+  }
+
+  .buttonAceworks {
+    width: 90%;
+  }
+
+
+
+  .skills {
+    display: inline !important;
+  }
+
+  .row1{
+    display: inline !important;
+  }
+
+  .row2 {
+    display: inline !important;   
+  }
+
+  .card {
+    margin: auto;
+    width: 80%;
+    }
+}

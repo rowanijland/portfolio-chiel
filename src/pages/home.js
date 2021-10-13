@@ -41,7 +41,7 @@ class Home extends Component {
             </div>
           </div>
           <div className="imageHome">
-            <iframe className="imageFrontpage" src="main.html" scrolling="no"></iframe>
+            <iframe title="mainImage" className="imageFrontpage" src="main.html" scrolling="no"></iframe>
           </div>
          </div>
 

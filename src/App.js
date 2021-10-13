@@ -129,7 +129,7 @@ class App extends Component {
               <li>
                 <Link onClick={() => this.setState({ active: !this.state.active })} 
                   className="nameNav" 
-                  to="/Qr">
+                  to="/">
                   <button onClick={this.scrollToMyRef2} className="iconName">Qr Link</button>
                 </Link>
               </li>
@@ -137,7 +137,7 @@ class App extends Component {
                 <Link
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="illustrationsNav nameNav"
-                  to="/Aceworks">
+                  to="/">
                   <button onClick={this.scrollToMyRef3} className="iconName" >Aceworks</button>
                 </Link>
               </li>
@@ -145,7 +145,7 @@ class App extends Component {
                 <Link
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="LogosNav nameNav"
-                  to="/Skills">
+                  to="/">
                   <button onClick={this.scrollToMyRef4} className="iconName">Skills</button>
                 </Link>
               </li>
@@ -153,7 +153,7 @@ class App extends Component {
                 <Link
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="LogosNav nameNav"
-                  to="/Tt">
+                  to="/">
                   <button onClick={this.scrollToMyRef5} className="iconName">Track Technologies</button>
                 </Link>
               </li>
@@ -161,7 +161,7 @@ class App extends Component {
                 <Link
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="LogosNav nameNav"
-                  to="/Teqram">
+                  to="/">
                   <button onClick={this.scrollToMyRef6} className="iconName">Teqram</button>
                 </Link>
               </li>
@@ -169,7 +169,7 @@ class App extends Component {
                 <Link
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="LogosNav nameNav"
-                  to="/School">
+                  to="/">
                   <button onClick={this.scrollToMyRef7} className="iconName">School</button>
                 </Link>
               </li>
@@ -177,7 +177,7 @@ class App extends Component {
                 <Link
                   onClick={() => this.setState({ active: !this.state.active })}
                   className="pageFourNav nameNav"
-                  to="/Contact">
+                  to="/">
                   <button onClick={this.scrollToMyRef8} className="iconName">Contact</button>
                 </Link>
               </li>
