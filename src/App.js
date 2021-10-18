@@ -16,15 +16,14 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.myRef1 = React.createRef()
-    this.myRef2 = React.createRef()
-    this.myRef3 = React.createRef()
-    this.myRef4 = React.createRef()
-    this.myRef5 = React.createRef()
-    this.myRef6 = React.createRef()
-    this.myRef7 = React.createRef()
-    this.myRef8 = React.createRef()
-
+    // this.myRef1 = React.createRef()
+    // this.myRef2 = React.createRef()
+    // this.myRef3 = React.createRef()
+    // this.myRef4 = React.createRef()
+    // this.myRef5 = React.createRef()
+    // this.myRef6 = React.createRef()
+    // this.myRef7 = React.createRef()
+    // this.myRef8 = React.createRef()
 
     this.state = {
       active: false,
@@ -45,9 +44,6 @@ class App extends Component {
   scrollToMyRef6 = () => window.scrollTo({left:0, top:3100, behavior: 'smooth'})
   scrollToMyRef7 = () => window.scrollTo({left:0, top:3700, behavior: 'smooth'})
   scrollToMyRef8 = () => window.scrollTo({left:0, top:4500, behavior: 'smooth'})
-
-
-
 
   componentDidMount() {
     window.addEventListener('scroll', this.hideToolTip);
