@@ -86,7 +86,7 @@ class App extends Component {
   }
 
   getLayoutMode() {
-    return window.innerWidth > 1300 ? 'desktop' : 'mobile';
+    return window.innerWidth > 1000 ? 'desktop' : 'mobile';
   }
 
   render() {

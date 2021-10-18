@@ -6,6 +6,7 @@ $light-blue: #F4F6F8;
 $qrlink: #E40046;
 
 *{
+  
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +14,9 @@ $qrlink: #E40046;
   user-select: initial;
   scrollbar-width: 10px;
 }
+
 body{
+  background-color: white;
   color: $dark-blue;
 }
 
@@ -434,6 +437,11 @@ button:focus{
 
 .robot{
   width: 100%;
+
+  display: inline;
+}
+.robotMobile{
+  display: none;
 }
 
 .teqramRight{
@@ -472,7 +480,7 @@ button:focus{
 }
 
 .schoolTitle{
-  padding: 60px;
+  padding: 5%;
   font-weight: lighter;
   text-align: center;
 }
@@ -512,10 +520,11 @@ button:focus{
 
 .buttons{
   margin: 50px auto;
-  width: 17%;
+  width: 20%;
   cursor: pointer;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 75% 15%;
+  grid-gap: 10%;
 }
 
 .buttonContact{
@@ -552,7 +561,7 @@ button:focus{
 
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
   .nav{
     display: none;
   }
@@ -567,6 +576,7 @@ button:focus{
 
   .intro{
     width: 100%;
+    border-radius: 50px;
   }
 
   .imageHome{
@@ -657,9 +667,10 @@ button:focus{
 
   .buttonAceworks {
     width: 90%;
+  }  
+  .skillsImg{
+    width: 30%;
   }
-
-
 
   .skills {
     display: inline !important;
@@ -676,5 +687,134 @@ button:focus{
   .card {
     margin: auto;
     width: 80%;
-    }
+  }
+
+  .track {
+    height: fit-content;
+    width: 100%;
+    margin: 40px 0;
+}
+
+  .trackContent {
+    padding: 15%;
+  }
+
+   .trackLogo {
+      width: 80%;
+      margin-bottom: 30px;
+  }
+  .trackText {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .teqram{
+    width: 70%;
+    display: block;
+
+    padding-top: 15%;
+     margin: auto;
+  }
+  
+  .teqramRight {
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    
+    width: 100%;
+    height: fit-content;
+    display: block;
+  }
+
+  .teqramRight img, h3 {
+    padding: 10px 0;
+    width: 80%;
+  }
+  .robot {
+    display: none;
+  }
+  .robotMobile{
+    display: inline;
+    padding-top: 30px;
+    margin-bottom: -6px;
+  }
+
+  .school {
+    margin: 0px 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 1000px;
+  }
+
+  .part1School {
+    display: inline;
+  }
+
+  .textSchool {
+    margin: 5% 10%;
+    text-align: justify;
+  }
+
+  .chess {
+    margin: auto;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .contact p {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 15pt;
+  }
+
+  .buttons {
+    margin: 50px auto;
+    width: 80%;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+  .buttonContact2 {
+    margin: auto;
+    width: 90%;
+    margin-top: 50px;
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .skills {
+    display: inline !important;
+  }
+
+  .row1{
+    display: inline !important;
+  }
+
+  .row2 {
+    display: inline !important;   
+  }
+
+  .card {
+    margin: auto;
+    width: 80%;
+  }
+  .skillsImg{
+    width: 60%;
+  }
+  .textSchool {
+    margin: 15%;
+    text-align: justify;
+  }
+
+  .schoolTitle {
+    padding-top: 15%;
+  }
+
 }

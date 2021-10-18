@@ -41,7 +41,7 @@ class Home extends Component {
             </div>
           </div>
           <div className="imageHome">
-            <iframe title="mainImage" className="imageFrontpage" src="main.html" scrolling="no"></iframe>
+            {/* <iframe title="mainImage" className="imageFrontpage" src="main.html" scrolling="no"></iframe> */}
           </div>
          </div>
 
@@ -156,6 +156,7 @@ class Home extends Component {
               </p>
             </div>
           </div>
+          <img className="robotMobile" alt="logo" src={machien}></img>
         </div>
         
         <div  ref={this.myRef7} className="school">
@@ -163,7 +164,7 @@ class Home extends Component {
           
           <div className="part1School">
             <div className="textSchool">
-              <h1>Chess board </h1>
+              <h1>Chess board</h1>
               <p>
                 At AceWorks I am the lead backend engineer. The stack at AceWorks started with VueJS on
                 top of Laravel, later on we changed Laravel to Go. At AceWorks we have developed simple
@@ -175,7 +176,7 @@ class Home extends Component {
 
           <div className="part1School">
             <div className="textSchool">
-              <h1>Aeron </h1>
+              <h1>Aeron</h1>
               <p>
                 At AceWorks I am the lead backend engineer. The stack at AceWorks started with VueJS on
                 top of Laravel, later on we changed Laravel to Go. At AceWorks we have developed simple
